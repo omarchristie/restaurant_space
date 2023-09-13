@@ -1,0 +1,29 @@
+{% extends "restaurant/restaurant_base.html" %}
+
+{% block prerestaurant %}
+<h1 class="restaurant_listH1">Restaurants</h1>
+{% if request.user.is_superuser %}
+    <a class="btn btn-primary" href="{% url 'restaurant:create'  %}"><span class="glyphicon glyphicon-pencil">Add Restaurant</span></a>
+{% endif %}
+
+{% endblock %}
+
+{% block restaurant_content %}
+<div class="col-md-8">
+	<div class="list-group">
+		{% for restaurant in object_list %}
+		  <a class="list-group-item" href="{% url 'restaurant:single' pk=restaurant.pk %}">
+			     <h3 class="title list-group-item-heading">{{ restaurant.name }}</h3>
+			<div class="list-group-item-text container-fluid">
+				{{ restaurant.description_html|safe }}
+				<div class="row">
+					<div class="col-md-4">
+						<span class="badge">{{ restaurant.ratings.count }}</span> Rating{{ restaurant.ratings.count|pluralize }}
+					</div>
+				</div>
+			</div>
+		</a>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

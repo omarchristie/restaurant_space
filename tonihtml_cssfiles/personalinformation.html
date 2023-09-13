@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<title> Personal Information| Tastebuds Restaurant Recommender </title>
+	<link rel= "stylesheet" href="personalinfo.css">
+	<link href="https://fonts.googleapis.com/css?family=Acme|Amaranth|Aref+Ruqaa|Arima+Madurai|Raleway|Ubuntu&display=swap" rel="stylesheet">
+	</head>
+	
+	<body>
+	
+	<div id="personalinfo">
+	
+	<div id="main">
+		<nav>
+			<a href= "home.html"><img src="logo2.jpg" width="80" height="80" align= "left"></a>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Create Account</a></li>
+				<li><a href="#">Login</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="info">
+		<h1> Personal Information </h1>
+		
+		<form enctype="multipart/form-data" method="POST"> <!--method="post" action="createaccountphp.php"-->
+		
+		<table>
+			<tr>
+				<td><p>Address Line 1:</p></td>
+				<td><input type="text" class="form-control" name=addressLn1></td>
+			</tr>
+			<tr>
+				<td><p>Address Line 2:</p></td>
+				<td><input type="text" class="form-control" name=addressLn2></td>
+			</tr>
+			<tr>
+				<td><p>City:</p></td>
+				<td><input type="text" class="form-control" name=city></td>
+			</tr>
+			<tr>
+				<td><p>Parish:</p></td>
+				<td>
+					<select>
+						<option value="Null">Select</option>
+						<option value="Kingston">Kingston</option>
+						<option value="Portland">Portland</option>
+						<option value="Saint Andrew">Saint Andrew</option>
+						<option value="Saint Thomas">Saint Thomas</option>
+						<option value="Clarendon">Clarendon</option>
+						<option value="Manchester">Manchester</option>
+						<option value="Saint Ann">Saint Ann</option>
+						<option value="Saint Catherine">Saint Catherine</option>
+						<option value="Saint Mary">Saint Mary</option>
+						<option value="Westmoreland">Westmoreland</option>
+						<option value="Trelawny">Trelawny</option>
+						<option value="Saint James">Saint James</option>
+						<option value="Hanover">Hanover</option>
+						<option value="Saint Elizabeth">Saint Elizabeth</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><p>Occupation:</p></td>
+				<td><input type="text" class="form-control" name=occupation></td>
+			</tr>
+			<tr>
+				<td><p>Monthly Income Level (JMD):</p></td>
+				<td>
+					<select>
+						<option value="< 10000"> <$10,000</option>
+						<option value="10000 - 29999 ">$10000 - $29999</option>
+						<option value="30000 - 49999">$30000 - $49999</option>
+						<option value="50000 - 69999">$50000 - $69999</option>
+						<option value="70000 - 99999">$70000 - $99999</option>
+						<option value="> 100000">> $100000</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><p>How many times a week do you go out to eat?</p></td>
+				<td>
+				<input type="radio" name="frequency" value="1" checked> Once
+				<input type="radio" name="frequency" value="2"> Twice
+				<input type="radio" name="frequency" value=">3"> More than three times
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+			</tr>
+			<tr>
+				<td><p>Do you go out to eat more on weekends or on weekdays?</p></td>
+				<td>
+				<input type="radio" name="weekendVweekday" value="Weekends" checked> Weekends
+				<input type="radio" name="weekendVweekday" value="Weekdays"> Weekdays
+				</td>
+			</tr>
+			<tr>
+				<td><p>What is the likelihood of you visiting a restaurant for breakfast,<br> lunch or dinner, and how much are you willing to spend on each?</p></td>
+				<tr>
+					<td><p>Breakfast:</p></td>
+					<td>
+						<select>
+						<option value="Very Likely">Very Likely</option>
+						<option value="Likely">Likely</option>
+						<option value="Unlikely">Unlikely</option>
+						<option value="Very Unlikely">Very Unlikely</option>
+					</td>
+				</tr>
+				<tr>
+					<td><p>Lunch:</p></td>
+					<td>
+						<select>
+						<option value="Very Likely">Very Likely</option>
+						<option value="Likely">Likely</option>
+						<option value="Unlikely">Unlikely</option>
+						<option value="Very Unlikely">Very Unlikely</option>
+					</td>
+				</tr>
+				<tr>
+					<td><p>Dinner:</p></td>
+					<td>
+						<select>
+						<option value="Very Likely">Very Likely</option>
+						<option value="Likely">Likely</option>
+						<option value="Unlikely">Unlikely</option>
+						<option value="Very Unlikely">Very Unlikely</option>
+					</td>
+				</tr>
+			</tr>
+			</tr>
+			<tr>
+				<td><p>How much are you willing to spend on breakfast, lunch<br> or dinner from a restaurant on a daily basis (JMD)?</p></td>
+				<tr>
+					<td><p>Breakfast:</td>
+					<td>$<input type="text" class="form-control" name=breakfastdaily>JMD</td>
+				</tr>
+				<tr>
+					<td><p>Lunch:</td>
+					<td>$<input type="text" class="form-control" name=lunchdaily>JMD</td>
+				</tr>
+				<tr>
+					<td><p>Dinner:</td>
+					<td>$<input type="text" class="form-control" name=dinnerdaily>JMD</td>
+				</tr>
+			</tr>
+			<tr>
+				<td><p>Does religion affect the food you eat?</p></td>
+				<td>
+					<input type="radio" name="yesReligion" value="Yes" checked> Yes
+					<input type="radio" name="noReligion" value="No"> No<br>
+				</td>
+			</tr>
+			<tr>
+				<td><p>If yes, which religion do you practise? (If no, select N/A)</p></td>
+				<td>
+						<select id="Religions">
+						<option value="Christianity">Christianity</option>
+						<option value="Islam">Islam</option>
+						<option value="Hinduism">Hinduism</option>
+						<option value="Buddhism">Buddhism</option>
+						<option value="Sikhism">Sikhism</option>
+						<option value="Judaism">Judaism</option>
+						<option value="N/A">N/A</option>
+						</select>
+						
+						Other: <input class="otherReligion" type="text" name=otherReligion>
+				</td>
+			</tr>
+		
+		
+		<!--</table>-->
+			<tr>
+				<td><p>What foods and beverages are you not able to eat because of<br> your religion? (Check all that apply)</p></td>
+			<td>
+			<input type="checkbox" name="prohibitedfoods" value="Beef"> Beef<br>
+			<input type="checkbox" name="prohibitedfoods" value="Seafood">Seafood<br>
+			<input type="checkbox" name="prohibitedfoods" value="Fish">Fish<br>
+			<input type="checkbox" name="prohibitedfoods" value="Crustaceans"> Crustaceans<br>
+			<input type="checkbox" name="prohibitedfoods" value="Pork"> Pork<br>
+			<input type="checkbox" name="prohibitedfoods" value="Gelatin">Gelatin<br>
+			</td>
+			<td id= "notAllowed">
+			<input type="checkbox" name="prohibitedfoods" value="Dairy"> Dairy<br>
+			<input type="checkbox" name="prohibitedfoods" value="Chicken">Chicken<br>
+			<input type="checkbox" name="prohibitedfoods" value="Turkey"> Turkey<br>
+			<input type="checkbox" name="prohibitedfoods" value="Duck">Duck<br>
+			<input type="checkbox" name="prohibitedfoods" value="Alcoholic Beverages">Alcoholic Beverages<br>
+			<input type="checkbox" name="prohibitedfoods" value="Caffeinated Beverages"> Caffeinated Beverages<br>
+			</td>
+			</tr>
+			
+		<!--<table>-->
+			<tr>
+				<td><p>Please state any food items that you are allergic to (separated by a comma):</p></td>
+				<td><textarea rows="4" cols="50"></textarea></td>
+			</tr>
+			<tr>
+				<td><p>Please state any lifestyle diseases that you have (separated by a comma):</p></td>
+				<td><textarea rows="4" cols="50"></textarea></td>
+			</tr>
+			<tr>
+				<td><p>Are you a vegetarian or vegan?</p></td>
+				<td>
+					<input type="radio" name="vegetarianvegan" value="Vegetarian">Vegetarian
+					<input type="radio" name="vegetarianvegan" value="Vegan">Vegan
+					<input type="radio" name="vegetarianvegan" value="Neither">Neither
+				</td>
+			</tr>
+			<tr>
+				<td><p>Do you consume alcohol?</p></td>
+				<td>
+					<input type="radio" name="alcohol" value="Yes">Yes
+					<input type="radio" name="alcohol" value="No">No
+				</td>
+			</tr>
+			<tr>
+				<td><p>Do you prefer to visit family-friendly restaurants when eating out?</p></td>
+				<td>
+					<input type="radio" name="family-friendly" value="Yes">Yes
+					<input type="radio" name="family-friendly" value="No">No
+				</td>
+			</tr>
+			<tr>
+				<td><p>Do you enjoy eating fast food?</p></td>
+				<td>
+					<input type="radio" name="fastfood" value="Yes">Yes
+					<input type="radio" name="fastfood" value="No">No
+				</td>
+			</tr>
+		</table>
+		<input type="submit" class="btn" value="Save Your Information">
+		</form>
+	</div>
+	
+	</div>
+		
+	</body>
+</html>

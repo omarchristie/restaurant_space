@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% if user.userprofile.profile_pic %}
+
+  <div id="loginpageDiv">
+  
+  <div>
+    <img src="{{ user.userprofile.profile_pic.url }}" width="200"></img>
+  </div>
+  
+{% else %}
+  <div>
+    <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" width="200"></img>
+  </div>
+{% endif %}
+
+<div class="container">
+  <h1 id="loginpageH1">Welcome, @{{ user }}</h1>
+  
+  <h3 id="loginpageH3">Profile</h3>
+  <!--<p class= "loginpagePara"><p class="attributePara">First Name:</p> {{ user.first_name }}</p>
+  <p class= "loginpagePara"><p class="attributePara">Last Name:</p> {{ user.last_name }}</p>
+  <p class= "loginpagePara"><p class="attributePara">Gender:</p> {{ user.userprofile.gender }}</p>
+  <p class= "loginpagePara"><p class="attributePara">Email:</p> {{ user.email }}</p>-->
+  
+  <table>
+    <tr>
+      <td class="loginpageCol1">First Name:</td> <td class="loginpageCol2">{{ user.first_name }}</td>
+    </tr>
+    
+    <tr>
+      <td class="loginpageCol1">Last Name:</td> <td class="loginpageCol2">{{ user.last_name }}</td>
+    </tr>
+    
+    <tr>
+      <td class="loginpageCol1">Gender:</td> <td class="loginpageCol2">{{ user.userprofile.gender }}</td>
+    </tr>
+    
+    <tr>
+      <td class="loginpageCol1">Email:</td> <td class="loginpageCol2">{{ user.email }}</td>
+    </tr>
+
+  </table>
+
+</div>
+
+</div>
+
+
+
+
+{% endblock %}

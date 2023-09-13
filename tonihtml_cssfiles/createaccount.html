@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<title> Create Your Account| Tastebuds Restaurant Recommender </title>
+	<link rel= "stylesheet" href="createaccount.css">
+	<link href="https://fonts.googleapis.com/css?family=Alegreya|Ubuntu" rel="stylesheet">
+	</head>
+	
+	<body>
+	<div id="main">
+		<nav>
+			<a href= "home.html"><img src="logo2.jpg" width="90" height="90" align= "left"></a>
+		</nav>
+	</div>
+	<div class="signup">
+		<h1> Create Your Account </h1>
+		<form <!--method="post" action="createaccountphp.php"-->>
+		<div class="form">
+		<p> Title:
+			<select name="titles">
+				<option value="Mr.">Mr.</option>
+				<option value="Mrs.">Mrs.</option>
+				<option value="Ms.">Ms.</option>
+			</select>
+		</p>
+		<p>Gender:
+		<input type="radio" name="gender" value="Male" style="vertical-align: middle"checked> Male
+		<input type="radio" name="gender" value="Female"> Female<br>
+		</p>
+		<p> First Name: <br>
+		<input type="text" class="form-control" name=fName>
+		</p>
+		<p> Last Name: <br>
+		<input type="text" class="form-control" name=lName>
+		</p>
+		<p> Email: <br>
+		<input type="mail" class="form-control" name=email>
+		</p>
+		<p> Username: <br>
+		<input type="text" class="form-control" name=username>
+		</p>
+		<p> Password: <br>
+		<input type="password" class="form-control"  name=password required></p>
+		<p> Confirm Password: <br>
+		<input type="password" class="form-control" name=confirmPwrd required>
+		</p>
+		<input type="submit" class="btn" value="Create Account"> </button>
+		
+		</div>
+		</form>
+	</div>
+		
+	</body>
+</html>

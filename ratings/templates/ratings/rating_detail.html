@@ -1,0 +1,14 @@
+{% extends "rating/rating_base.html" %}
+
+{% block prerating %}
+
+<div>
+    <p class="date">created: {{ rating.created_at|date:'d-m-Y' }}</p>
+    <h1>{{ rating.title }}</h1>
+    <p>Rated Restaurant:{{ rating.restaurant }}</p>
+    <p>Restaurant Rating{{ rating.res_rating }}</p>
+    <p>{{ rating.message|truncatechars:200 }}</p>
+</div>
+
+
+{% endblock %}

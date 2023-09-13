@@ -1,0 +1,45 @@
+{% extends "restaurant/restaurant_base.html" %}
+
+{% block prerestaurant %}
+
+<div class="restaurant_listH1">
+    <h1>{{restaurant.name}}</h1></br>
+    <h3>Address: {{restaurant.address}}</h3>
+    <p>Description: {{restaurant.description}}</p>
+</div>
+
+<div>
+	</br>
+	<img src="{{ restaurant.restaurant_pic.url }}" width="300" height="300"></img>
+</div>
+
+<a class="btn btn-primary btn-comment" href="{% url 'ratings:add_rating_to_restaurant' pk=restaurant.pk %}">Add Rating</a>
+{% endblock %}
+
+
+{% block restaurant_content %}
+
+<div class="col-md-8">
+	{% if restaurant.ratings.count == 0 %}
+	</br></br><h2 class="restdeetsP">No Ratings for this Restaurant!</h2>
+
+	{% else %}
+
+		</br></br><p class="restdeetsP">User Ratings and Reviews for {{restaurant.name}}</p>
+		{% for restaurant in restaurant.ratings.all %}
+		<div>
+			</br>	
+			<p>User Rating:       {{ restaurant.res_rating }}</p>
+			<p>Review:       {{ restaurant.message }}</p>
+			<p>Made By:      {{ restaurant.user }}</p>
+			<p>Date:         {{ restaurant.created_at }}</p>
+			</br>
+			
+		</div>
+		{% endfor %}
+			
+	
+
+	{% endif %}
+</div>
+{% endblock %}

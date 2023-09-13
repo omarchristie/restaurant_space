@@ -1,0 +1,215 @@
+/**{
+	margin: 0;
+	padding: 0;
+}*/
+
+html, body {
+    height:100%;
+    margin: 0;
+}
+
+
+/*--FOR HOME.HTML--*/
+
+/*h1, h2 {
+}*/
+
+#intro {
+    margin-top: 140px;
+	color: white;
+	margin-left: 130px;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 50px;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	/*margin-top: 150px;*/
+}
+
+#intro2 {
+    margin-top: 0px;
+    margin-bottom: 23px;
+	color: white;
+	text-align: center;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: 2px;
+	/*margin-top: 150px;*/
+}
+
+#homeBody {
+    color: white;
+    font-family: serif;
+    background: url("https://cdn7.dissolve.com/p/D1024_95_531/D1024_95_531_1200.jpg") no-repeat;
+    background-size: 100%;
+    background-position: fixed;
+}
+
+#homeDiv a{
+    margin-left: 250px;
+    font-family: 'Kodchasan', sans-serif;
+    border: 2px solid black;
+    color: red;
+    text-decoration: none;
+    margin-right: 5px;
+    font-size: 50px;
+    background-color: rgba(0,0,0,0.5);
+	font-weight: bold;
+}
+
+
+/*--END OF HOME.HTML--*/
+
+
+
+/*--FOR HEADER.HTML--*/
+
+#navbar{
+    width: 100%;
+	height: 53px;
+	background-color: black;
+	line-height: 100px;
+}
+
+.btn.btn-simple {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 25px;
+    color: red;
+    margin-right: 0px;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	height: 90px;
+}
+
+a.navbar-brand.mynav {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 45px;
+    color: red;
+    margin-left: 15px;
+    line-height: 10px;
+}
+
+
+/*--END OF HEADER.HTML--*/
+
+
+/*--FOR BASE.HTML--*/
+
+#baseBody {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 2.5rem;
+}
+
+
+
+/*--END OF BASE.HTML--*/
+
+
+
+/*--FOR FOOTER.HTML--*/
+
+.footerDiv {
+    position: absolute;
+    bottom: 0;
+    width: 1100px;
+    height: 1 rem;
+    font-weight: bold;
+}
+
+
+/*--END OF FOOTER.HTML--*/
+
+
+
+/*--FOR LOGINPAGE.HTML--*/
+
+
+#loginpageH1 {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 60px;
+    color: red;
+}
+
+#loginpageH3 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/*.loginpagePara {
+    font-family: 'Josefin Sans', sans-serif;
+    padding-top: 25px;
+    color: black;
+}
+
+.attributePara {
+    font-weight: bold;
+}*/
+
+.loginpageCol2 {
+    text-align: left;
+	padding-left: 15px;
+	padding-top: 15px;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+.loginpageCol1 {
+    text-align: left;
+	padding-left: 0px;
+	padding-top: 15px;
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+    color: black;
+}
+
+/*--END OF LOGINPAGE.HTML--*/
+
+/*--FOR RESTAURANT_LIST.HTML--*/
+
+.restaurant_listH1 {
+    color: red;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 30px;
+    text-align: left;
+}
+
+.col-md-8 {
+    font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+/*--END OF RESTAURANT_LIST.HTML--*/
+
+
+/*--FOR RECOMMENDED_RESTAURANT.HTML--*/
+
+/*.list-group {
+    color: black;
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 30px;
+    text-align: left;
+}*/
+
+/*--END OF RECOMMENDED_RESTAURANT.HTML--*/
+
+
+/*--FOR RESTAURANT_DETAIL.HTML--*/
+
+.restdeetsP {
+    color: red;
+    font-size: 30px;
+}
+
+/*--END OF RESTAURANT_DETAIL.HTML--*/

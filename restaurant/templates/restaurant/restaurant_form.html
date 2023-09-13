@@ -1,0 +1,11 @@
+{% extends "restaurant/restaurant_base.html" %}
+{% load bootstrap3 %}
+
+{% block restaurant_content %}
+<h4>Create A New Group</h4>
+  <form enctype="multipart/form-data" method="POST" >
+  	{% csrf_token %}
+  	{% bootstrap_form form %}
+  	<input type="submit" value="Create" class="btn btn-primary btn-large">
+  </form>
+{% endblock %}

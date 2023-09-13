@@ -1,0 +1,21 @@
+{% extends "rating/rating_base.html" %}
+
+{% block prerestaurant %}
+<h1>Here is the list of your Rating</h1>
+{% endblock %}
+
+{% block rating_content %}
+<div class="col-md-8">
+	<div class="list-group">
+		{% for rating in object_list %}
+		  <div class="rating">
+            <p class="date">created: {{ rating.created_at|date:'d-m-Y' }}</p>
+            <h1><a href="{% url 'ratings:rating_detail' pk=rating.pk %}">{{ rating.title }}</a></h1>
+            <p>Rated Restaurant:{{ rating.restaurant }}</p>
+            <p>Restaurant Rating{{ rating.res_rating }}</p>
+            <p>{{ rating.message|truncatechars:200 }}</p>
+        </div>
+		{% endfor %}
+	</div>
+</div>
+{% endblock %}

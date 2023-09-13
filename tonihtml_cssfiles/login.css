@@ -1,0 +1,121 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: serif;
+    background: url("couple-having-dinner-restaunt.jpg") no-repeat;
+    background-size: 100%;
+    background-position: fixed;
+}
+
+/*.bg {
+	background: url("couple-having-dinner-restaunt.jpg");
+}*/
+
+/*.logo {
+	width: 100px;
+	height: 100px;
+	border-radius: 70%;
+	position: relative;
+	top: -175px;
+}*/
+
+.login{
+    width: 400px;
+    height: 400px;
+    top: 60%;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background-color: rgba(53, 54, 56, 0.637);
+	text-align: center;
+	border-radius: 125px;
+}
+
+
+input[type=text] {
+	padding: 20px;
+	width: 300px;
+	border: none;
+	border-bottom: 3px solid orange;
+	background: transparent;
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+	color: white;
+	outline: none;
+	font-size: 15px;
+}
+
+input[type=password] {
+	padding: 20px;
+	width: 300px;
+	border: none;
+	border-bottom: 3px solid orange;
+	background: transparent;
+	text-align: center;
+	display: block;
+	margin: 10px auto;
+	color: white;
+	outline: none;
+	font-size: 15px;
+	
+}
+
+::placeholder {
+	color: white;
+	font-family:Helvetica;
+}
+
+h1 {
+	font-size: 40px;
+	color: white;
+	font-family:Century Gothic;
+	letter-spacing: 5px;
+}
+
+.btn {
+	margin: 50px;
+	padding: 20px;
+	width: 300px;
+	border: none;
+	border-radius: 20px;
+	font-size: 20px;
+	outline: none;
+	background-color: orange;
+	color: white;
+	cursor: pointer;
+	
+}
+
+.btn:active {
+	transform: scale(0.96);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

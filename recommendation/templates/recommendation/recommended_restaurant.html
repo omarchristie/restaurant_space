@@ -1,0 +1,39 @@
+{% extends "recommendation/recommend_base.html" %}
+
+{% block prerestaurant %}
+<h1>Here is the list of all Recommendation</h1>
+{% endblock %}
+
+{% block recommend_content %}
+<div class="col-md-8">
+	<div class="list-group">
+		{% if recommendation %}
+		
+			{% for rest in recommendation %}
+				{% for restaurant in rest %}
+				
+					<a class="list-group-item" href="{% url 'restaurant:single' pk=restaurant.pk %}">
+			     	<h3 class="title list-group-item-heading">{{ restaurant.name }}</h3>
+					<div class="list-group-item-text container-fluid">
+						{{ restaurant.description_html|safe }}
+					<div class="row">
+						<div class="col-md-4">
+							<span class="badge">{{ restaurant.ratings.count }}</span> Rating{{ restaurant.ratings.count|pluralize }}
+						</div>
+					</div>
+					</div>
+					</a>
+					
+				{% endfor %}
+			
+		  
+		{% endfor %}
+		
+		{% else %}
+		
+			<p>No recommendations available. </br></br>Please check the list of popular restaurants.</p>
+		
+		{% endif %}
+	</div>
+</div>
+{% endblock %}

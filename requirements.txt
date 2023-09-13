@@ -1,0 +1,5 @@
+django-bootstrap3
+pillow
+django-multiselectfield
+django-misaka
+django-slugify-processor
